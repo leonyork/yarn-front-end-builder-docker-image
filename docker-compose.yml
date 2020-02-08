@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  yarn-front-end-builder:
+    image: leonyork/yarn-front-end-builder:${IMAGE_TAG}
+    build:
+      context: .
+      args:
+        - "NODE_VERSION=${NODE_VERSION}"
+        - "YARN_VERSION=${YARN_VERSION}"
