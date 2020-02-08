@@ -6,8 +6,7 @@ branches:
 services:
   - docker
 env:
-  - DOCKER_CLIENT_TIMEOUT=300
-  - COMPOSE_HTTP_TIMEOUT=300
+  - DOCKER_CLIENT_TIMEOUT=300 COMPOSE_HTTP_TIMEOUT=300
 install:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - travis_retry sh build.sh
