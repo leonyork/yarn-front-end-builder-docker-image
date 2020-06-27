@@ -9,7 +9,7 @@ version=1.0.0
 
 # Number of releases to go back from the latest version
 number_of_yarn_releases=3
-number_of_node_releases=5
+number_of_node_releases=1
 
 # Creates tags of the form {version}-{YARN_VERSION}-{NODE_VERSION} (e.g. 1.0.0-yarn1.22.0-node13.3.0-alpine3.11)
 # First gets the last $number_of_node_releases alpine tags where the tag looks like a version number (there were some odd tags that look like dates)
